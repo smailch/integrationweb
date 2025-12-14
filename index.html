@@ -1,0 +1,421 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Reportes — Tableau de bord</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./dist/output.css" />
+  </head>
+  <body class="min-h-screen bg-white font-[Roboto]">
+    <div class="min-h-screen">
+      <!-- Sidebar -->
+      <aside class="fixed inset-y-0 left-0 w-[355px] border-r border-gray-100 bg-white">
+        <div class="flex h-40 flex-col items-center justify-center gap-4 px-6">
+          <img
+            src="./assets/logo-esprit-club.jpg"
+            alt="ESPRIT CLUB"
+            class="h-20 w-full max-w-none object-contain"
+          />
+          <div class="h-px w-24 bg-blue-950/80"></div>
+        </div>
+
+        <nav class="px-5 pb-8 pt-2">
+          <ul class="space-y-2">
+            <li>
+              <a href="./index.html" class="flex h-12 items-center gap-4 rounded-2xl bg-blue-950 px-4 text-white" aria-current="page">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M3 13h8V3H3v10zm10 8h8V11h-8v10zM3 21h8v-6H3v6zm10-10h8V3h-8v8z" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">Dashboard</span>
+              </a>
+            </li>
+            <li>
+              <a href="./liste-evenement.html" class="flex h-12 items-center gap-4 rounded-2xl bg-white px-4 text-slate-700">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 6h13M8 12h13M8 18h13M3 6h.01M3 12h.01M3 18h.01" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">Liste Evenement</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex h-12 items-center gap-4 rounded-2xl bg-white px-4 text-slate-700">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 15a4 4 0 01-4 4H7l-4 3V7a4 4 0 014-4h10a4 4 0 014 4v8z" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">Discussions publiques</span>
+              </a>
+            </li>
+            <li>
+              <a href="./chat-prive.html" class="flex h-12 items-center gap-4 rounded-2xl bg-white px-4 text-slate-700">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M7 8h10M7 12h6M5 21l2-2h12a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2v2z" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">Chats privés</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex h-12 items-center gap-4 rounded-2xl bg-white px-4 text-slate-700">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3M4 11h16M5 5h14a2 2 0 012 2v14a2 2 0 01-2 2H5a2 2 0 01-2-2V7a2 2 0 012-2z" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">calendar</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex h-12 items-center gap-4 rounded-2xl bg-white px-4 text-slate-700">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M12 15l-3.5 2 1-4-3-2.5 4-.3L12 6l1.5 3.2 4 .3-3 2.5 1 4L12 15z" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20 12a8 8 0 11-16 0 8 8 0 0116 0z" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">achievements</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex h-12 items-center gap-4 rounded-2xl bg-white px-4 text-slate-700">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">favoris</span>
+              </a>
+            </li>
+            <li>
+              <a href="#" class="flex h-12 items-center gap-4 rounded-2xl bg-white px-4 text-slate-700">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 11l3 3L22 4" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M21 12v7a2 2 0 01-2 2H5a2 2 0 01-2-2V5a2 2 0 012-2h11" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">Polls</span>
+              </a>
+            </li>
+            <li class="pt-2">
+              <a href="#" class="flex h-12 items-center gap-4 rounded-2xl bg-gray-200/70 px-4 text-slate-600">
+                <svg viewBox="0 0 24 24" class="size-5" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M10 16l-4-4 4-4" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M6 12h12" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M18 20H8a2 2 0 01-2-2V6a2 2 0 012-2h10" />
+                </svg>
+                <span class="font-[DM_Sans] text-base">déconnexion</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </aside>
+
+      <!-- Main -->
+      <main class="ml-[355px] min-h-screen px-12 py-10">
+        <header class="flex items-start justify-between">
+          <h1 class="font-[DM_Sans] text-4xl font-semibold tracking-tight text-indigo-900">Tableau de bord</h1>
+
+          <div class="flex items-center gap-5">
+            <div class="relative">
+              <button
+                id="notifButton"
+                class="relative grid size-12 place-items-center rounded-full bg-white"
+                aria-label="Notifications"
+                aria-haspopup="menu"
+                aria-expanded="false"
+                aria-controls="notifPopover"
+              >
+                <svg viewBox="0 0 24 24" class="size-7 text-slate-700" fill="none" stroke="currentColor" stroke-width="2">
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M15 17h5l-1.4-1.4A2 2 0 0118 14.2V11a6 6 0 10-12 0v3.2c0 .5-.2 1-.6 1.4L4 17h5" />
+                  <path stroke-linecap="round" stroke-linejoin="round" d="M9 17a3 3 0 006 0" />
+                </svg>
+                <span class="absolute -right-1 -top-1 grid size-6 place-items-center rounded-full bg-orange-600 text-xs font-semibold text-white">12</span>
+              </button>
+
+              <!-- Notification popover (matches screenshot) -->
+              <div
+                id="notifPopover"
+                class="absolute right-0 top-[calc(100%+12px)] z-50 hidden w-72 overflow-hidden rounded-2xl bg-white shadow-xl shadow-slate-200/60 ring-1 ring-gray-100"
+                role="menu"
+                aria-label="Notifications"
+              >
+                <div class="divide-y divide-gray-100">
+                  <a href="./chat-prive.html" class="flex items-center justify-between px-5 py-4 hover:bg-slate-50">
+                    <div>
+                      <div class="font-[DM_Sans] text-sm font-semibold text-slate-900">IEEE CLUB</div>
+                      <div class="text-xs text-slate-500">Evenement 1</div>
+                    </div>
+                    <div class="text-xs font-medium text-slate-500">20:00</div>
+                  </a>
+                  <a href="./chat-prive.html" class="flex items-center justify-between px-5 py-4 hover:bg-slate-50">
+                    <div>
+                      <div class="font-[DM_Sans] text-sm font-semibold text-slate-900">Robotique CLUB</div>
+                      <div class="text-xs text-slate-500">Evenement 2</div>
+                    </div>
+                    <div class="text-xs font-medium text-slate-500">19:00</div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="size-14 overflow-hidden rounded-full bg-gray-200">
+              <div class="h-full w-full bg-gradient-to-br from-gray-100 to-gray-300"></div>
+            </div>
+          </div>
+        </header>
+
+        <section class="mt-10 grid grid-cols-12 gap-10">
+          <!-- Left column -->
+          <div class="col-span-7">
+            <!-- Welcome card -->
+            <div class="relative h-72 overflow-hidden rounded-3xl bg-gradient-to-br from-slate-800 via-slate-900 to-slate-950">
+              <div class="absolute inset-0 bg-white/5"></div>
+
+              <div class="relative h-full p-8 text-white">
+                <div class="text-2xl font-bold drop-shadow-sm">Bonsoir !!</div>
+
+                <div class="absolute bottom-8 right-8 flex items-center gap-2">
+                  <svg viewBox="0 0 24 24" class="size-6" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M10 14a4 4 0 118 0v4H10v-4z" />
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M14 10a2 2 0 10-4 0" />
+                  </svg>
+                  <div class="text-2xl font-bold drop-shadow-sm">-15 ° C</div>
+                </div>
+
+                <div class="absolute right-8 top-6 text-right text-lg drop-shadow-sm">
+                  <div>12 May 2022</div>
+                  <div>10:23 PM</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Donuts -->
+            <div class="mt-10 grid grid-cols-2 gap-16">
+              <div class="flex items-center gap-6">
+                <div class="relative size-16">
+                  <svg class="size-16 -rotate-90" viewBox="0 0 36 36">
+                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f2f2f2" stroke-width="4" />
+                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#ef4444" stroke-width="4" stroke-linecap="round" stroke-dasharray="80, 100" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-600">Tâches restantes</div>
+                  <div class="text-xl font-bold text-slate-500">12/15</div>
+                </div>
+              </div>
+
+              <div class="flex items-center gap-6">
+                <div class="relative size-16">
+                  <svg class="size-16 -rotate-90" viewBox="0 0 36 36">
+                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f2f2f2" stroke-width="4" />
+                    <path d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" fill="none" stroke="#f97316" stroke-width="4" stroke-linecap="round" stroke-dasharray="80, 100" />
+                  </svg>
+                </div>
+                <div>
+                  <div class="text-xs text-slate-600">Tâches restantes</div>
+                  <div class="text-xl font-bold text-slate-500">12/15</div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Progress stats -->
+            <div class="mt-12">
+              <div class="flex items-center justify-between">
+                <div class="text-2xl font-medium text-slate-900">Progress Stats</div>
+                <div class="flex items-center gap-8 text-sm">
+                  <span class="text-slate-400">day</span>
+                  <span class="text-slate-400">week</span>
+                  <span class="text-slate-900">month</span>
+                </div>
+              </div>
+
+              <div class="mt-8 flex items-end gap-10">
+                <!-- bars (approx from screenshot) -->
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-36 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">Jan</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-28 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">Feb</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-20 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">Mar</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-32 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">Apr</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-44 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">May</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-32 w-12 rounded-t-md bg-slate-700/30"></div>
+                  <div class="text-xs text-slate-400">Jun</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-24 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">Jul</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-28 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">Aug</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-40 w-12 rounded-t-md bg-gradient-to-b from-slate-900 to-slate-900/40"></div>
+                  <div class="text-xs text-slate-400">Sep</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-28 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">Oct</div>
+                </div>
+                <div class="flex flex-col items-center gap-2">
+                  <div class="h-32 w-12 rounded-t-md bg-slate-100"></div>
+                  <div class="text-xs text-slate-400">Nov</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Right column -->
+          <div class="col-span-5">
+            <div class="rounded-3xl bg-gray-50 p-8 shadow-sm ring-1 ring-gray-100">
+              <div class="flex items-center justify-between">
+                <button class="grid size-9 place-items-center rounded-full bg-white shadow-sm ring-1 ring-gray-100" aria-label="Mois précédent">
+                  <svg viewBox="0 0 24 24" class="size-4 text-slate-500" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15 19l-7-7 7-7" />
+                  </svg>
+                </button>
+
+                <div class="flex items-center gap-10">
+                  <div class="text-xs font-medium text-slate-400">December</div>
+                  <div class="text-xs font-semibold text-slate-900">January</div>
+                  <div class="text-xs font-medium text-slate-400">February</div>
+                </div>
+
+                <button class="grid size-9 place-items-center rounded-full bg-white shadow-sm ring-1 ring-gray-100" aria-label="Mois suivant">
+                  <svg viewBox="0 0 24 24" class="size-4 text-slate-500" fill="none" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </button>
+              </div>
+
+              <div class="mt-6 grid grid-cols-7 gap-y-5 text-center">
+                <div class="text-xs font-bold text-slate-900">S</div>
+                <div class="text-xs font-bold text-slate-900">M</div>
+                <div class="text-xs font-bold text-slate-900">T</div>
+                <div class="text-xs font-bold text-slate-900">W</div>
+                <div class="text-xs font-bold text-slate-900">T</div>
+                <div class="text-xs font-bold text-slate-900">S</div>
+                <div class="text-xs font-bold text-slate-900">S</div>
+
+                <!-- row 1 (prev month faded) -->
+                <div class="text-sm text-slate-400/60">26</div>
+                <div class="text-sm text-slate-400/60">27</div>
+                <div class="text-sm text-slate-400/60">28</div>
+                <div class="text-sm text-slate-400/60">29</div>
+                <div class="text-sm text-slate-400/60">30</div>
+                <div class="text-sm text-slate-400/60">31</div>
+                <div class="text-sm text-blue-500">1</div>
+
+                <!-- row 2 -->
+                <div class="text-sm text-blue-500">2</div>
+                <div class="text-sm text-blue-500">3</div>
+                <div class="text-sm text-blue-500">4</div>
+                <div class="text-sm text-blue-500">5</div>
+                <div class="text-sm text-blue-500">6</div>
+                <div class="text-sm text-blue-500">7</div>
+                <div class="text-sm text-blue-500">8</div>
+
+                <!-- row 3 -->
+                <div class="text-sm text-blue-500">9</div>
+                <div class="text-sm text-blue-500">10</div>
+                <div class="text-sm text-blue-500">11</div>
+                <div class="text-sm text-blue-500">12</div>
+                <div class="grid place-items-center">
+                  <div class="grid size-9 place-items-center rounded-md bg-blue-500 text-sm font-medium text-white">13</div>
+                </div>
+                <div class="grid place-items-center">
+                  <div class="grid size-9 place-items-center rounded-full bg-orange-500 text-sm font-medium text-white">14</div>
+                </div>
+                <div class="grid place-items-center">
+                  <div class="grid size-9 place-items-center rounded-full bg-fuchsia-500 text-sm font-medium text-white">15</div>
+                </div>
+
+                <!-- row 4 -->
+                <div class="text-sm text-blue-500">16</div>
+                <div class="text-sm text-blue-500">17</div>
+                <div class="text-sm text-blue-500">18</div>
+                <div class="text-sm text-blue-500">19</div>
+                <div class="text-sm text-blue-500">20</div>
+                <div class="text-sm text-blue-500">21</div>
+                <div class="text-sm text-blue-500">22</div>
+
+                <!-- row 5 -->
+                <div class="text-sm text-blue-500">23</div>
+                <div class="text-sm text-blue-500">24</div>
+                <div class="text-sm text-blue-500">25</div>
+                <div class="text-sm text-blue-500">26</div>
+                <div class="grid place-items-center">
+                  <div class="grid size-9 place-items-center rounded-full bg-fuchsia-500 text-sm font-medium text-white">27</div>
+                </div>
+                <div class="text-sm text-blue-500">28</div>
+                <div class="text-sm text-blue-500">29</div>
+
+                <!-- row 6 -->
+                <div class="text-sm text-blue-500">30</div>
+                <div class="text-sm text-slate-400/60">1</div>
+                <div class="text-sm text-slate-400/60">2</div>
+                <div class="text-sm text-slate-400/60">3</div>
+                <div class="text-sm text-slate-400/60">4</div>
+                <div class="text-sm text-slate-400/60">5</div>
+                <div class="text-sm text-slate-400/60">6</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      (() => {
+        const button = document.getElementById('notifButton');
+        const popover = document.getElementById('notifPopover');
+        if (!button || !popover) return;
+
+        const close = () => {
+          popover.classList.add('hidden');
+          button.setAttribute('aria-expanded', 'false');
+        };
+
+        const open = () => {
+          popover.classList.remove('hidden');
+          button.setAttribute('aria-expanded', 'true');
+        };
+
+        const toggle = () => {
+          if (popover.classList.contains('hidden')) open();
+          else close();
+        };
+
+        button.addEventListener('click', (e) => {
+          e.stopPropagation();
+          toggle();
+        });
+
+        popover.addEventListener('click', (e) => {
+          e.stopPropagation();
+        });
+
+        document.addEventListener('click', () => {
+          close();
+        });
+
+        document.addEventListener('keydown', (e) => {
+          if (e.key === 'Escape') close();
+        });
+      })();
+    </script>
+  </body>
+</html>
