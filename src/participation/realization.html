@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Realisations - Esprit Club</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <div class="flex min-h-screen">
+        <!-- Sidebar (Shared) -->
+        <aside class="w-64 min-h-screen bg-white border-r border-gray-200 flex flex-col p-4 fixed h-full">
+            <div class="flex items-center gap-2 mb-8 px-2">
+                <img src="../../assets/logo-esprit-club.jpg" alt="esprit club" class="h-10 w-auto object-contain">
+                <div class="flex flex-col">
+                    <span class="font-bold text-gray-800 text-lg leading-tight">ESPRIT</span>
+                    <span class="text-gray-500 text-xs tracking-wider">CLUB</span>
+                </div>
+            </div>
+            <nav class="flex-1 space-y-2">
+                <a href="../../index.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="7" height="9" x="3" y="3" rx="1" />
+                        <rect width="7" height="5" x="14" y="3" rx="1" />
+                        <rect width="7" height="9" x="14" y="12" rx="1" />
+                        <rect width="7" height="5" x="3" y="16" rx="1" />
+                    </svg>
+                    <span class="capitalize">Dashboard</span>
+                </a>
+                <a href="../../liste-evenement.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="8" x2="21" y1="6" y2="6" />
+                        <line x1="8" x2="21" y1="12" y2="12" />
+                        <line x1="8" x2="21" y1="18" y2="18" />
+                        <line x1="3" x2="3.01" y1="6" y2="6" />
+                        <line x1="3" x2="3.01" y1="12" y2="12" />
+                        <line x1="3" x2="3.01" y1="18" y2="18" />
+                    </svg>
+                    <span class="capitalize">Liste Evenement</span>
+                </a>
+                <a href="#"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                    <span class="capitalize">Discussions publiques</span>
+                </a>
+                <a href="../../chat-prive.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
+                    </svg>
+                    <span class="capitalize">Chats privés</span>
+                </a>
+                <a href="calendar.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 2v4" />
+                        <path d="M16 2v4" />
+                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                        <path d="M3 10h18" />
+                    </svg>
+                    <span class="capitalize">calendar</span>
+                </a>
+                <a href="realization.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg bg-blue-900 text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                        <path d="M4 22h16" />
+                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                    </svg>
+                    <span class="capitalize">Realisation</span>
+                </a>
+                <a href="favorites.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                    <span class="capitalize">favoris</span>
+                </a>
+                <a href="#"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                        <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                    </svg>
+                    <span class="capitalize">sondage</span>
+                </a>
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <button
+                        class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 w-full text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                            <polyline points="16 17 21 12 16 7" />
+                            <line x1="21" x2="9" y1="12" y2="12" />
+                        </svg>
+                        <span>déconnexion</span>
+                    </button>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 ml-64 p-8">
+            <div class="flex items-center gap-2 mb-6">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                    class="text-gray-600">
+                    <path d="m15 18-6-6 6-6" />
+                </svg>
+                <h1 class="text-2xl font-bold text-gray-800">Realisations</h1>
+            </div>
+
+            <!-- User Status Card -->
+            <div class="bg-white rounded-2xl border border-gray-200 p-8 mb-8 shadow-sm">
+                <div class="flex justify-between items-start mb-8">
+                    <div class="flex gap-4 items-center">
+                        <div class="w-20 h-20 bg-gray-300 rounded-lg overflow-hidden relative">
+                            <img src="../../assets/event1.jpg" alt="User" class="w-full h-full object-cover">
+                        </div>
+                        <div>
+                            <h2 class="text-2xl font-bold text-gray-900 flex items-center gap-2">
+                                utilisateur
+                            </h2>
+                            <div class="mt-1">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="#FCD34D" stroke="none">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <path d="m9 12 2 2 4-4" stroke="white" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="flex flex-col items-center">
+                        <div
+                            class="w-16 h-10 bg-gradient-to-br from-yellow-300 to-yellow-500 rounded-xl shadow-lg mb-1 relative overflow-hidden">
+                            <div class="absolute inset-0 bg-white/20"></div>
+                        </div>
+                        <div class="font-bold text-gray-900 text-sm">Gold</div>
+                        <div class="text-yellow-500 font-bold text-sm">24</div>
+                    </div>
+                </div>
+
+                <h3 class="text-2xl font-bold mb-4">800 points pour le niveau suivant</h3>
+
+                <div class="relative h-14 bg-orange-100 rounded-full overflow-hidden w-full">
+                    <div class="absolute top-0 left-0 h-full bg-orange-400 rounded-full flex items-center justify-end pr-6 text-white font-bold"
+                        style="width: 65%;">
+                        <span class="flex items-center gap-2">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="white" stroke="none">
+                                <polygon
+                                    points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                            </svg>
+                            1000/1800
+                        </span>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Badges Grid -->
+            <div class="bg-white rounded-2xl border border-gray-200 p-8 shadow-sm">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Badge 1: Premier événement -->
+                    <div
+                        class="border border-gray-200 rounded-xl p-6 text-center flex flex-col items-center hover:shadow-md transition-shadow h-full pb-8 relative">
+                        <div class="mb-4 text-green-500">
+                            <svg width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M12 3l-4 9h8l-6 9 6-9H8l4-9z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-4 leading-tight">Premier événement</h3>
+
+                        <div class="w-full bg-blue-900 h-3 rounded-full mt-auto mb-2"></div>
+                        <p class="text-xs text-gray-600 font-medium mb-4">ouvert</p>
+
+                        <p class="text-[10px] text-gray-500 text-center leading-tight max-w-[120px]">Vous avez assisté à
+                            votre premier évenement</p>
+                    </div>
+
+                    <!-- Badge 2: On Fire -->
+                    <div
+                        class="border border-gray-200 rounded-xl p-6 text-center flex flex-col items-center hover:shadow-md transition-shadow h-full pb-8">
+                        <div class="mb-4 text-red-500">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M8.5 14.5A2.5 2.5 0 0 0 11 12c0-1.38-.5-2-1-3-1.07 2.2-4.18 2.08-4.5 3.81a2.5 2.5 0 0 0 5 1.69z" />
+                                <path
+                                    d="M15 10a4 4 0 0 1 4 4c0 2.21-1.79 4-4 4s-4-1.79-4-4c0-1.29.61-2.45 1.56-3.23L15 10z" />
+                                <path d="M12 2C7 5 3 8 3 13a9 9 0 0 0 18 0c0-5-4-8-9-11z" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-6">On Fire</h3>
+
+                        <div class="w-full bg-gray-200 h-3 rounded-full mb-1 overflow-hidden">
+                            <div class="bg-blue-900 h-full rounded-full" style="width: 66%;"></div>
+                        </div>
+
+                        <div class="flex-1 flex flex-col justify-end mt-4">
+                            <p class="text-[10px] text-gray-600 font-medium mb-4 text-left w-full pl-2">Participez à 3
+                                évenements en une semaine</p>
+                            <p class="text-[10px] text-gray-500 font-bold">2/3 Complété</p>
+                        </div>
+                    </div>
+
+                    <!-- Badge 3: VIP -->
+                    <div
+                        class="border border-gray-200 rounded-xl p-6 text-center flex flex-col items-center hover:shadow-md transition-shadow h-full pb-8">
+                        <div class="mb-4 h-16 flex items-end">
+                            <span
+                                class="text-yellow-400 font-light text-5xl tracking-widest border-b border-yellow-400 pb-1">VIP</span>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-2">VIP</h3>
+                        <p class="text-[10px] text-gray-500 mb-6 font-bold">Attend 25 VIP Events</p>
+
+                        <div class="w-full bg-gray-200 h-3 rounded-full border border-gray-300 mb-auto"></div>
+
+                        <div class="mt-auto pt-8">
+                            <p class="text-[10px] text-gray-500 font-bold">0/25 Complete</p>
+                        </div>
+                    </div>
+
+                    <!-- Badge 4: Last Minute Hero -->
+                    <div
+                        class="border border-gray-200 rounded-xl p-6 text-center flex flex-col items-center hover:shadow-md transition-shadow h-full pb-8">
+                        <div class="mb-4 text-blue-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2" />
+                            </svg>
+                        </div>
+                        <h3 class="font-bold text-gray-900 text-lg mb-2 leading-tight">Last Minute Hero</h3>
+                        <p class="text-[10px] text-gray-500 mb-6 leading-tight max-w-[140px]">Inscrivez dans 5 évenement
+                            durant 25h jusqu'au deadline</p>
+
+                        <div class="w-full bg-blue-900 h-3 rounded-full mt-auto mb-2"></div>
+                        <p class="text-xs text-green-600 font-bold uppercase">ouvert</p>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+    </div>
+</body>
+
+</html>
