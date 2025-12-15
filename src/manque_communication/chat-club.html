@@ -56,156 +56,11 @@
     </style>
   </head>
   <body class="min-h-screen bg-white text-slate-900">
-    <div class="flex min-h-screen w-full">
-      <!-- SIDEBAR (identique aux autres pages) -->
-      <aside
-        class="w-64 bg-white border-r border-slate-200 flex flex-col px-5 pt-6 pb-6"
-      >
-        <!-- Logo -->
-        <div class="mb-8">
-          <img
-            src="../../assets/logo-esprit-club.jpg"
-            alt="Logo Esprit Club"
-            class="w-32 h-auto object-contain"
-          />
-        </div>
-
-        <!-- Menu -->
-        <nav class="flex-1">
-          <ul class="space-y-2 text-[13px] text-slate-800">
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-1 py-1 text-sm text-slate-900"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md border border-slate-300 text-[12px]"
-                >
-                  ▤
-                </span>
-                <span>Dashboard</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  🗓
-                </span>
-                <span>Liste Evenement</span>
-              </a>
-            </li>
-
-            <!-- Discussions publiques -->
-            <li>
-              <a
-                href="discusion-publique.html"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  🔗
-                </span>
-                <span>Discussions publiques</span>
-              </a>
-            </li>
-
-            <!-- Chat Club (actif sur cette page) -->
-            <li>
-              <a
-                href="chat-club.html"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-900 text-white shadow-sm"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-slate-900 text-[12px]"
-                >
-                  💬
-                </span>
-                <span>Chat Club</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  📆
-                </span>
-                <span>calendar</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  🏆
-                </span>
-                <span>achievements</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  ❤
-                </span>
-                <span>favoris</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  📊
-                </span>
-                <span>Polls</span>
-              </a>
-            </li>
-
-            <!-- Déconnexion -->
-            <li class="pt-2">
-              <button
-                class="w-full flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-200 text-[13px] text-slate-800"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-full border border-sky-500 text-sky-500 text-[12px]"
-                >
-                  ✕
-                </span>
-                <span>déconnexion</span>
-              </button>
-            </li>
-          </ul>
-        </nav>
-      </aside>
-
-      <!-- CONTENU PRINCIPAL CHAT -->
-      <main class="flex-1 flex flex-col">
+    <!-- Sidebar dynamique -->
+    <div id="sidebar"></div>
+    <script src="./sidebar.js"></script>
+    <!-- CONTENU PRINCIPAL CHAT -->
+    <main class="flex flex-col min-h-screen" style="margin-left: 16rem;"> <!-- 16rem = 256px (w-64) -->
         <!-- Barre du haut -->
         <header
           class="flex items-center justify-between px-10 py-6 bg-white border-b border-slate-200"
@@ -232,14 +87,8 @@
             </button>
 
             <!-- Avatar -->
-            <div
-              class="h-10 w-10 rounded-full overflow-hidden border border-slate-300"
-            >
-              <img
-                src="assets/profil.jpeg"
-                alt="Photo de profil"
-                class="h-full w-full object-cover"
-              />
+            <div class="size-14 overflow-hidden rounded-full bg-gray-200">
+              <img src="../../assets/Smail.jpeg" alt="Photo de profil" class="h-full w-full object-cover" />
             </div>
           </div>
         </header>
@@ -437,6 +286,7 @@
         </section>
       </main>
     </div>
+    <script src="./sidebar.js"></script>
   </body>
 </html>
 

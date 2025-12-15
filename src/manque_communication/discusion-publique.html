@@ -8,141 +8,9 @@
     <link rel="stylesheet" href="../../dist/output.css" />
   </head>
   <body class="min-h-screen bg-white text-slate-900">
-    <div class="flex min-h-screen w-full">
-      <!-- SIDEBAR (même design que chat-club) -->
-      <aside
-        class="w-64 bg-white border border-slate-200 rounded-3xl flex flex-col px-5 pt-6 pb-6 shadow-sm"
-      >
-        <!-- Logo -->
-        <div class="mb-8">
-          <img
-            src="../../assets/logo-esprit-club.jpg"
-            alt="Logo Esprit Club"
-            class="w-32 h-auto object-contain"
-          />
-        </div>
-
-        <!-- Menu -->
-        <nav class="flex-1">
-          <ul class="space-y-2 text-[13px] text-slate-800">
-            <!-- Dashboard simple -->
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-1 py-1 text-sm text-slate-900"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md border border-slate-300 text-[12px]"
-                >
-                  ▤
-                </span>
-                <span>Dashboard</span>
-              </a>
-            </li>
-
-            <!-- Liste Evenement -->
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  🗓
-                </span>
-                <span>Liste Evenement</span>
-              </a>
-            </li>
-
-            <!-- Discussions publiques (actif sur cette page) -->
-            <li>
-              <a
-                href="discusion-publique.html"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-900 text-white shadow-sm"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-slate-900 text-[12px]"
-                >
-                  🔗
-                </span>
-                <span>Discussions publiques</span>
-              </a>
-            </li>
-
-            <!-- Chat Club -->
-            <li>
-              <a
-                href="chat-club.html"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  💬
-                </span>
-                <span>Chat Club</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  📆
-                </span>
-                <span>calendar</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  🏆
-                </span>
-                <span>achievements</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  ❤
-                </span>
-                <span>favoris</span>
-              </a>
-            </li>
-
-            <li>
-              <a
-                href="#"
-                class="flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-100 text-slate-800 hover:bg-slate-200 transition"
-              >
-                <span
-                  class="inline-flex h-6 w-6 items-center justify-center rounded-md bg-white text-[12px]"
-                >
-                  📊
-                </span>
-                <span>Polls</span>
-              </a>
-            </li>
-
-            <!-- Déconnexion -->
-            <li class="pt-2">
+        <!-- Sidebar dynamique -->
+        <div id="sidebar"></div>
+                <script src="./sidebar.js"></script>
               <button
                 class="w-full flex items-center gap-2 px-3 py-2 rounded-xl bg-slate-200 text-[13px] text-slate-800"
               >
@@ -159,7 +27,7 @@
       </aside>
 
       <!-- CONTENU PRINCIPAL -->
-      <main class="flex-1 flex flex-col">
+        <main class="flex flex-col min-h-screen" style="margin-left: 16rem;"> <!-- 16rem = 256px (w-64) -->
         <!-- Barre du haut -->
         <header
           class="flex items-center justify-between px-10 py-6 bg-white border-b border-slate-200"
@@ -188,14 +56,8 @@
             </button>
 
             <!-- Avatar -->
-            <div
-              class="h-10 w-10 rounded-full overflow-hidden border border-slate-300"
-            >
-              <img
-                src="assets/profil.jpeg"
-                alt="Photo de profil"
-                class="h-full w-full object-cover"
-              />
+            <div class="size-14 overflow-hidden rounded-full bg-gray-200">
+              <img src="/assets/Smail.jpeg" alt="Photo de profil" class="h-full w-full object-cover" />
             </div>
           </div>
         </header>
@@ -337,7 +199,7 @@
                   <!-- Image de l'évènement -->
                   <div class="mt-3">
                     <img
-                      src="assets/event3.webp"
+                      src="/assets/event3.webp"
                       alt="Évènement Esprit Club"
                       class="w-full h-56 object-cover rounded-lg"
                     />
@@ -371,6 +233,7 @@
       </main>
     </div>
 
+    <script src="./sidebar.js"></script>
   </body>
 </html>
 
