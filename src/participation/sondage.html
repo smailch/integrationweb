@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sondages - Esprit Club</title>
+    <link href="../../dist/output.css" rel="stylesheet">
+</head>
+
+<body class="bg-gray-50">
+    <div class="flex min-h-screen">
+        <!-- Sidebar -->
+        <aside class="w-64 min-h-screen bg-white border-r border-gray-200 flex flex-col p-4 fixed h-full">
+            <div class="flex items-center gap-2 mb-8 px-2">
+                <img src="../../assets/logo-esprit-club.jpg" alt="esprit club" class="h-10 w-auto object-contain">
+                <div class="flex flex-col">
+                    <span class="font-bold text-gray-800 text-lg leading-tight">ESPRIT</span>
+                    <span class="text-gray-500 text-xs tracking-wider">CLUB</span>
+                </div>
+            </div>
+            <nav class="flex-1 space-y-2">
+                <a href="../../index.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="7" height="9" x="3" y="3" rx="1" />
+                        <rect width="7" height="5" x="14" y="3" rx="1" />
+                        <rect width="7" height="9" x="14" y="12" rx="1" />
+                        <rect width="7" height="5" x="3" y="16" rx="1" />
+                    </svg>
+                    <span class="capitalize">Dashboard</span>
+                </a>
+                <a href="../../liste-evenement.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="8" x2="21" y1="6" y2="6" />
+                        <line x1="8" x2="21" y1="12" y2="12" />
+                        <line x1="8" x2="21" y1="18" y2="18" />
+                        <line x1="3" x2="3.01" y1="6" y2="6" />
+                        <line x1="3" x2="3.01" y1="12" y2="12" />
+                        <line x1="3" x2="3.01" y1="18" y2="18" />
+                    </svg>
+                    <span class="capitalize">Liste Evenement</span>
+                </a>
+                <a href="#"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z" />
+                    </svg>
+                    <span class="capitalize">Discussions publiques</span>
+                </a>
+                <a href="../../chat-prive.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="m3 21 1.9-5.7a8.5 8.5 0 1 1 3.8 3.8z" />
+                    </svg>
+                    <span class="capitalize">Chats privés</span>
+                </a>
+                <a href="calendar.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M8 2v4" />
+                        <path d="M16 2v4" />
+                        <rect width="18" height="18" x="3" y="4" rx="2" />
+                        <path d="M3 10h18" />
+                    </svg>
+                    <span class="capitalize">calendar</span>
+                </a>
+                <a href="realization.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                        <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                        <path d="M4 22h16" />
+                        <path d="M10 14.66V17c0 .55-.47.98-.97 1.21C7.85 18.75 7 20.24 7 22" />
+                        <path d="M14 14.66V17c0 .55.47.98.97 1.21C16.15 18.75 17 20.24 17 22" />
+                        <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                    </svg>
+                    <span class="capitalize">Realisation</span>
+                </a>
+                <a href="favorites.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 hover:text-gray-900 transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z" />
+                    </svg>
+                    <span class="capitalize">favoris</span>
+                </a>
+                <a href="sondage.html"
+                    class="flex items-center gap-3 px-4 py-3 rounded-lg bg-blue-900 text-white transition-colors">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21.21 15.89A10 10 0 1 1 8 2.83" />
+                        <path d="M22 12A10 10 0 0 0 12 2v10z" />
+                    </svg>
+                    <span class="capitalize">sondage</span>
+                </a>
+                <div class="mt-4 pt-4 border-t border-gray-100">
+                    <button
+                        class="flex items-center gap-3 px-4 py-3 rounded-lg text-gray-600 hover:bg-gray-100 w-full text-left">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+                            <polyline points="16 17 21 12 16 7" />
+                            <line x1="21" x2="9" y1="12" y2="12" />
+                        </svg>
+                        <span>déconnexion</span>
+                    </button>
+                </div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="flex-1 ml-64 p-8">
+            <div class="max-w-7xl mx-auto">
+                <div class="flex justify-between items-center mb-6">
+                    <div class="flex items-center gap-2">
+                        <a href="event-details.html" class="flex items-center text-black font-bold group">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round" class="mr-2 group-hover:-translate-x-1 transition-transform">
+                                <path d="m15 18-6-6 6-6" />
+                            </svg>
+                            <h1 class="text-2xl font-bold">Sondages</h1>
+                        </a>
+                    </div>
+                    <div class="relative">
+                        <input type="text" placeholder="Search"
+                            class="bg-gray-50 border border-gray-200 rounded-lg pl-10 pr-4 py-2 text-sm focus:outline-none focus:ring-1 focus:ring-blue-500">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                            <circle cx="11" cy="11" r="8" />
+                            <path d="m21 21-4.3-4.3" />
+                        </svg>
+                        <button class="absolute right-3 top-1/2 -translate-y-1/2 text-gray-400 hover:text-gray-600">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="10" />
+                                <path d="m15 9-6 6" />
+                                <path d="m9 9 6 6" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+
+                <div
+                    class="bg-white rounded-3xl border border-gray-200 p-8 shadow-sm flex flex-col items-center lg:items-start lg:flex-row gap-8">
+                    <!-- Left Side: Poll -->
+                    <div class="flex-1 w-full relative">
+                        <!-- Decorative Cloud -->
+                        <div
+                            class="absolute -top-4 -left-4 w-16 h-16 rounded-full border border-blue-200 flex items-center justify-center text-blue-300">
+                            <span class="text-3xl font-light">?</span>
+                        </div>
+
+                        <h2 class="text-2xl font-bold mb-8 ml-16 mt-2">Sondage rapide</h2>
+
+                        <h3 class="text-xl font-bold mb-6">Avez vous une idée sur la machine learning ?</h3>
+
+                        <div class="space-y-4 max-w-xl">
+                            <!-- Option 1 -->
+                            <label
+                                class="flex items-center gap-4 p-4 border border-gray-300 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors group">
+                                <div class="relative flex items-center">
+                                    <input type="radio" name="poll"
+                                        class="peer h-6 w-6 cursor-pointer border-2 border-gray-300 text-black focus:ring-0 checked:border-black checked:bg-black" />
+                                </div>
+                                <span class="text-xl font-bold">oui</span>
+                            </label>
+
+                            <!-- Option 2 -->
+                            <label
+                                class="flex items-center gap-4 p-4 border border-gray-300 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors">
+                                <div class="relative flex items-center">
+                                    <input type="radio" name="poll"
+                                        class="peer h-6 w-6 cursor-pointer border-2 border-gray-300 text-black focus:ring-0 checked:border-black checked:bg-black" />
+                                </div>
+                                <span class="text-xl font-bold">non</span>
+                            </label>
+
+                            <!-- Option 3 -->
+                            <label
+                                class="flex items-center gap-4 p-4 border border-gray-300 rounded-2xl cursor-pointer hover:bg-gray-50 transition-colors flex-wrap">
+                                <div class="relative flex items-center">
+                                    <input type="radio" name="poll"
+                                        class="peer h-6 w-6 cursor-pointer border-2 border-gray-300 text-black focus:ring-0 checked:border-black checked:bg-black" />
+                                </div>
+                                <span class="text-xl font-bold mr-auto">autres</span>
+                                <div
+                                    class="w-full sm:w-auto mt-2 sm:mt-0 sm:flex-1 bg-purple-100 rounded-lg flex items-center px-4 py-2 sm:ml-4">
+                                    <span class="text-gray-500 text-sm">Text</span>
+                                    <button class="ml-auto text-gray-400 hover:text-gray-600">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                            stroke-linecap="round" stroke-linejoin="round">
+                                            <circle cx="12" cy="12" r="10" />
+                                            <path d="m15 9-6 6" />
+                                            <path d="m9 9 6 6" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </label>
+                        </div>
+
+                        <div class="mt-8 flex justify-end max-w-xl">
+                            <a href="sondage-result.html"
+                                class="bg-blue-900 text-white px-8 py-2 rounded-lg font-medium hover:bg-blue-800 transition-colors">
+                                Soumettre
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Right Side: Comments -->
+                    <div class="w-full lg:w-80">
+                        <div class="bg-white rounded-xl shadow-lg border border-gray-100 p-6 relative">
+                            <button class="absolute top-4 right-4 text-gray-400 hover:text-gray-600">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <path d="M18 6 6 18" />
+                                    <path d="m6 6 12 12" />
+                                </svg>
+                            </button>
+
+                            <h3 class="font-bold text-lg mb-4">comments</h3>
+
+                            <div class="flex items-start gap-3 mb-4">
+                                <img src="../../assets/event1.jpg" alt="User"
+                                    class="w-10 h-10 rounded-full object-cover shadow-sm">
+                                <div>
+                                    <div class="font-bold text-sm text-gray-700">Reviewer name</div>
+                                    <div class="text-xs text-gray-400">Date</div>
+                                </div>
+                            </div>
+
+                            <p class="text-gray-500 text-xs mb-6 leading-relaxed bg-gray-50 p-3 rounded-lg">
+                                Body text for whatever you'd like to say. Add main takeaway points, quotes, anecdotes,
+                                or even a very very short story.
+                            </p>
+
+                            <div class="bg-purple-50 rounded-lg p-2 flex items-center gap-2">
+                                <input type="text" placeholder="ajouter un commentaire..."
+                                    class="bg-transparent border-none text-xs w-full focus:outline-none placeholder-gray-500 text-gray-700">
+                                <button class="text-gray-400 hover:text-gray-600">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10" />
+                                        <path d="m15 9-6 6" />
+                                        <path d="m9 9 6 6" />
+                                    </svg>
+                                </button>
+                                <button
+                                    class="bg-teal-400 text-white text-[10px] font-bold px-3 py-1.5 rounded-md hover:bg-teal-500 transition-colors uppercase tracking-wide">
+                                    Publier
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+
+</html>
