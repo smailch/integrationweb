@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ESPRIT CLUB - Notre Équipe</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+        .team-card-name {
+            clip-path: polygon(0 0, 100% 0, 95% 100%, 5% 100%);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+<!-- ================= HEADER ================= -->
+<header class="bg-white shadow-sm">
+    <nav class="max-w-7xl mx-auto px-6 py-4">
+        <div class="flex items-center justify-between">
+            <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/logo-esprit-club.jpg" alt="ESPRIT CLUB Logo" class="w-16 h-16 object-contain">
+                    <div class="text-2xl font-bold">
+                        
+                    </div>
+                </div>
+
+            <!-- Navigation -->
+            <div class="hidden md:flex items-center space-x-6">
+                <a href="index.html" class="text-gray-700 hover:text-blue-900 text-sm font-medium">Accueil</a>
+                <a href="AboutUs.html" class="bg-blue-900 text-white px-4 py-2 rounded text-sm font-medium">A propos</a>
+                <a href="#" class="text-gray-700 hover:text-blue-900 text-sm font-medium">clubs</a>
+                <a href="#" class="text-gray-700 hover:text-blue-900 text-sm font-medium">contact</a>
+            </div>
+
+            <!-- Login Button -->
+            <div class="flex flex-col items-end">
+                <button class="bg-blue-900 text-white px-6 py-2 rounded flex items-center space-x-2 hover:bg-blue-800 transition">
+                    <i class="fas fa-user-circle"></i>
+                    <span class="text-sm">SE CONNECTER</span>
+                </button>
+                <a href="#" class="text-xs text-gray-600 mt-1.5">Vous n'avez pas de compte?</a>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<!-- ================= MAIN CONTENT ================= -->
+<main class="max-w-6xl mx-auto px-6 py-16">
+    
+    <!-- Section Title -->
+    <div class="mb-16">
+        <h1 class="text-4xl font-bold text-gray-800 mb-4">Esprit Clubs</h1>
+        <div class="w-32 h-1 bg-gradient-to-r from-blue-900 to-cyan-500 mb-8"></div>
+        
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <!-- Text Content -->
+            <div>
+                <p class="text-gray-700 text-base leading-relaxed mb-8">
+                    <span class="font-semibold">Esprit Clubs</span> est une plateforme web créée par <span class="font-semibold">WebFive</span>, 
+                    un groupe de six étudiants passionnés par le développement web et la vie associative, dont la mission 
+                    est de faciliter l'intégration des nouveaux étudiants à Esprit et d'encourager la participation à la vie des clubs 
+                    et associations de l'école.
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Notre vision</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-900 to-cyan-500 mb-6"></div>
+                
+                <p class="text-gray-700 text-base leading-relaxed mb-8">
+                    Avoir une communauté étudiante impliquée où chaque étudiant trouve sa place, développe ses 
+                    compétences et crée des liens durables.
+                </p>
+
+                <h2 class="text-2xl font-bold text-gray-800 mb-3">Notre Équipe — WebFive</h2>
+                <div class="w-24 h-1 bg-gradient-to-r from-blue-900 to-cyan-500"></div>
+            </div>
+
+            <!-- Illustration -->
+            <div class="flex justify-center">
+                <svg width="350" height="350" viewBox="0 0 400 400" class="drop-shadow-xl">
+                    <!-- Shadow -->
+                    <ellipse cx="200" cy="330" rx="70" ry="15" fill="#1e3a8a" opacity="0.2"/>
+                    
+                    <!-- Legs -->
+                    <path d="M180 280 Q170 310 160 335 L180 340 Q185 315 190 295 Z" fill="#1e3a8a"/>
+                    <path d="M220 280 Q235 305 250 325 L270 320 Q255 300 245 280 Z" fill="#1e3a8a"/>
+                    
+                    <!-- Shoes -->
+                    <ellipse cx="170" cy="337" rx="28" ry="13" fill="#f59e0b" transform="rotate(-10 170 337)"/>
+                    <ellipse cx="260" cy="322" rx="28" ry="13" fill="#f59e0b" transform="rotate(5 260 322)"/>
+                    <ellipse cx="172" cy="337" rx="20" ry="9" fill="#fbbf24" transform="rotate(-10 172 337)"/>
+                    <ellipse cx="258" cy="322" rx="20" ry="9" fill="#fbbf24" transform="rotate(5 258 322)"/>
+                    
+                    <!-- Body -->
+                    <path d="M170 200 Q165 240 175 280 L225 280 Q235 240 230 200 Z" fill="#60a5fa"/>
+                    
+                    <!-- Shirt details -->
+                    <circle cx="190" cy="240" r="8" fill="#3b82f6"/>
+                    <circle cx="210" cy="240" r="8" fill="#3b82f6"/>
+                    <path d="M175 215 L185 225 L175 225 Z" fill="#3b82f6"/>
+                    
+                    <!-- Left Arm (waving up) -->
+                    <path d="M170 210 Q150 200 140 170 L150 165 Q160 190 175 205 Z" fill="#93c5fd"/>
+                    
+                    <!-- Right Arm (waving up) -->
+                    <path d="M230 210 Q250 180 280 150 L290 160 Q265 185 245 210 Z" fill="#93c5fd"/>
+                    
+                    <!-- Left Hand -->
+                    <ellipse cx="142" cy="168" rx="16" ry="19" fill="#c2956e" transform="rotate(-25 142 168)"/>
+                    <path d="M130 162 Q122 160 118 165 Q116 169 119 171 Q126 167 133 168 Z" fill="#c2956e"/>
+                    <path d="M135 155 Q127 152 122 155 Q120 158 123 161 Q130 158 138 160 Z" fill="#c2956e"/>
+                    
+                    <!-- Right Hand -->
+                    <ellipse cx="288" cy="155" rx="19" ry="16" fill="#c2956e" transform="rotate(35 288 155)"/>
+                    <path d="M298 148 Q308 142 315 143 Q318 145 316 148 Q307 151 299 153 Z" fill="#c2956e"/>
+                    <path d="M293 158 Q303 158 311 163 Q312 166 310 168 Q301 166 293 163 Z" fill="#c2956e"/>
+                    
+                    <!-- Head -->
+                    <circle cx="200" cy="165" r="48" fill="#c2956e"/>
+                    
+                    <!-- Hair -->
+                    <path d="M158 158 Q153 135 170 123 Q190 113 213 120 Q233 127 238 145 Q243 163 237 178 Q232 166 221 160 Q210 154 199 154 Q184 154 173 162 Q163 169 158 158 Z" fill="#2d1810"/>
+                    
+                    <!-- Beard -->
+                    <path d="M172 185 Q172 202 183 213 Q194 219 206 219 Q218 219 229 213 Q240 202 240 185 Z" fill="#2d1810"/>
+                    
+                    <!-- Face features -->
+                    <circle cx="183" cy="165" r="5" fill="#1e293b"/>
+                    <circle cx="217" cy="165" r="5" fill="#1e293b"/>
+                    <path d="M193 183 Q200 189 207 183" stroke="#1e293b" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+                    
+                    <!-- Eyebrows -->
+                    <path d="M175 155 Q183 152 190 154" stroke="#2d1810" fill="none" stroke-width="2" stroke-linecap="round"/>
+                    <path d="M210 154 Q217 152 225 155" stroke="#2d1810" fill="none" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+            </div>
+        </div>
+    </div>
+
+    <!-- Team Members Grid -->
+    <div class="grid md:grid-cols-3 gap-8 mt-16">
+        <!-- Member 1 -->
+        <div class="flex flex-col items-center group">
+            <div class="relative mb-6 transform transition-all duration-300 group-hover:scale-105">
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="assets/Smail.png" alt="Chemlali Smail" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="team-card-name bg-blue-900 text-white py-3 px-8 text-center font-semibold shadow-lg">
+                Chemlali Smail
+            </div>
+        </div>
+
+        <!-- Member 2 -->
+        <div class="flex flex-col items-center group">
+            <div class="relative mb-6 transform transition-all duration-300 group-hover:scale-105">
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="assets/Ala.png" alt="Ben Daoud Ala" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="team-card-name bg-blue-900 text-white py-3 px-8 text-center font-semibold shadow-lg">
+                Ben Daoud Ala
+            </div>
+        </div>
+
+        <!-- Member 3 -->
+        <div class="flex flex-col items-center group">
+            <div class="relative mb-6 transform transition-all duration-300 group-hover:scale-105">
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="assets/Yahya.png" alt="Kmiti yahya" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="team-card-name bg-blue-900 text-white py-3 px-8 text-center font-semibold shadow-lg">
+                Kmiti yahya
+            </div>
+        </div>
+
+        <!-- Member 4 -->
+        <div class="flex flex-col items-center group">
+            <div class="relative mb-6 transform transition-all duration-300 group-hover:scale-105">
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="assets/Wassim.png" alt="Figuil Wassim" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="team-card-name bg-blue-900 text-white py-3 px-8 text-center font-semibold shadow-lg">
+                Figui Wassim
+            </div>
+        </div>
+
+        <!-- Member 5 -->
+        <div class="flex flex-col items-center group">
+            <div class="relative mb-6 transform transition-all duration-300 group-hover:scale-105">
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="assets/Sirine.png" alt="Metoui Sirine" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="team-card-name bg-blue-900 text-white py-3 px-8 text-center font-semibold shadow-lg">
+                Metoui Sirine
+            </div>
+        </div>
+
+        <!-- Member 6 -->
+        <div class="flex flex-col items-center group">
+            <div class="relative mb-6 transform transition-all duration-300 group-hover:scale-105">
+                <div class="w-40 h-40 rounded-full overflow-hidden border-4 border-white shadow-xl">
+                    <img src="assets/Rahma.png" alt="Ayed Rahma" class="w-full h-full object-cover">
+                </div>
+            </div>
+            <div class="team-card-name bg-blue-900 text-white py-3 px-8 text-center font-semibold shadow-lg">
+                Ayed Rahma
+            </div>
+        </div>
+    </div>
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="bg-blue-950 text-white py-12 mt-20">
+    <div class="max-w-7xl mx-auto px-6">
+        <div class="flex flex-col items-center">
+            <!-- Logo -->
+                <div class="flex items-center space-x-3">
+                    <img src="assets/logo-esprit-club.jpg" alt="ESPRIT CLUB Logo" class="w-16 h-16 object-contain">
+                    <div class="text-2xl font-bold">
+                        
+                    </div>
+                </div>
+
+            <!-- Links -->
+            <div class="flex space-x-8 mb-6 text-sm">
+                <a href="index.html" class="hover:text-cyan-400 transition">Home</a>
+                <a href="#" class="hover:text-cyan-400 transition">Service</a>
+                <a href="#" class="hover:text-cyan-400 transition">Ressource</a>
+                <a href="#" class="hover:text-cyan-400 transition">Contact</a>
+                <a href="AboutUs.html" class="hover:text-cyan-400 transition">About</a>
+            </div>
+
+            <!-- Description -->
+            <p class="text-center text-sm text-gray-300 mb-6 max-w-2xl">
+                Esprit Clubs est conçue pour transformer la gestion et faciliter l'intégration et la participation à la vie étudiante.
+            </p>
+
+            <!-- Social Icons -->
+            <div class="flex space-x-6">
+                <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-facebook text-xl"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-twitter text-xl"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-linkedin text-xl"></i></a>
+                <a href="#" class="hover:text-cyan-400 transition"><i class="fab fa-instagram text-xl"></i></a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+</body>
+</html>
